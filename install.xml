@@ -1,0 +1,26 @@
+<install>
+	<name>ofNetworkArduino</name>
+	<version>0.01</version>
+	<author>Eric Gradman</author>
+	<url></url>
+	<requires>ofxNetwork</requires>
+
+	<add>
+		<src>
+			<folder name="addons/ofxNetwork/src">
+				<file>../../../addons/ofNetworkArduino/src/ofNetworkArduino.h</file>
+				<file>../../../addons/ofNetworkArduino/src/ofNetworkArduino.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofNetworkArduino/src</path>
+		</include>
+
+		<link>
+			<lib os="win32" compiler="devcpp">wsock32</lib>
+		</link>
+
+	</add>
+
+</install>
